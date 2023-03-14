@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!9+=aq_8raz^t($e7hvw!$0#!q$8ra_+40(4-fhomc#j8s8(u2
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-LOGIN_URL='/login/'
+LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-    
+
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,10 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-#MEDIA_URL = 'media/'
-#MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
+MEDIA_URLS = '.\puddle\media'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
